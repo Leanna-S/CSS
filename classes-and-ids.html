@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDs and Classes</title>
+    <style>
+      body {
+        background-color: #fbfbfe;
+        color: #17230b;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        font-size: 24px;
+      }
+      #styled-by-id {
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+
+      .nav-links {
+        padding: 5px;
+        margin: 4px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        background-color: #eeffee;
+        color: darkgreen;
+      }
+
+      .nav-links li {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a class="nav-links" href="index.html"><li>Inline CSS</li></a>
+          <a class="nav-links" href="internal-css.html"
+            ><li>Internal CSS</li></a
+          >
+          <a class="nav-links" href="external-css.html"
+            ><li>External CSS</li></a
+          >
+          <a class="nav-links" href="testing-cascading.html"
+            ><li>Testing Cascading</li></a
+          >
+          <a class="nav-links" href="classes-and-ids.html"
+            ><li>IDs and Classes</li></a
+          >
+          <a class="nav-links" href="div-and-span.html"
+            ><li>Div and Span</li></a
+          >
+        </ul>
+      </nav>
+      <h1>IDs and Classes</h1>
+    </header>
+    <main>
+      <p id="styled-by-id">
+        This page shows the effects of giving an element an ID and styling that
+        ID
+      </p>
+    </main>
+  </body>
+</html>
