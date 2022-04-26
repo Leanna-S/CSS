@@ -4,40 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Div and Span</title>
+    <title>Typography Principles</title>
     <style>
+      * {
+        line-height: 140%;
+        font-family: Arial, Verdana, sans-serif;
+      }
       body {
-        background-color: #fbfbfe;
-        color: #17230b;
+        background-color: #141414;
+        color: #f2f2f2;
+        letter-spacing: 3px;
+        word-spacing: 5px;
       }
       h1 {
+        font-weight: bold;
+        text-decoration: underline;
         text-align: center;
-        font-size: 40px;
+        font-size: 64px;
+        text-transform: uppercase;
       }
       p {
-        font-size: 24px;
+        font-size: 30px;
+        padding: 2%;
+        background-color: #303030;
       }
       #styled-by-id {
-        font-family: Georgia, Cambria, serif;
-        font-weight: bold;
+        font-style: italic;
       }
+
       ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
       }
       li {
-        padding: 5px;
-        margin: 4px;
+        padding: 0;
+        margin: 0;
         font-size: 20px;
       }
 
       .nav-links {
         padding: 5px;
-        margin: 4px;
+
         border-style: solid;
         border-width: 2px;
         border-color: black;
-        background-color: #eeffee;
-        color: darkgreen;
+        background-color: #303030;
+        color: violet;
       }
 
       .nav-links li {
@@ -70,14 +84,19 @@
           >
         </ul>
       </nav>
-      <h1>Div and Span</h1>
+      <h1>Typography Principles</h1>
     </header>
     <main>
       <div style="color: ghostwhite; height: 140px; width: auto">
         <p id="styled-by-id">
           This page shows the effects of giving an element an ID and
-          <span style="color: #17230b; font-weight: bold">styling</span>
+          <span style="color: violet; font-weight: bold">styling</span>
           that ID
+        </p>
+        <p>
+          Super cool text that is
+          <span style="color: violet; font-style: italic">customized</span> to
+          be up to typography standards
         </p>
       </div>
     </main>
