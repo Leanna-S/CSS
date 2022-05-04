@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDs and Classes</title>
+    <title>Typography Principles</title>
     <style>
+      h1 {
+        font-size: 48px;
+        text-align: center;
+      }
+      div p {
+        font-weight: bold;
+      }
+      div {
+        background-color: ghostwhite;
+      }
       body {
         background-color: #fbfbfe;
         color: #17230b;
@@ -30,7 +40,7 @@
         font-size: 20px;
       }
 
-      .nav-links {
+      nav a {
         padding: 5px;
         margin: 4px;
         border-style: solid;
@@ -40,8 +50,16 @@
         color: darkgreen;
       }
 
-      .nav-links li {
+      nav li {
         display: inline-block;
+      }
+      nav a:hover,
+      nav a:focus {
+        background-color: darkgreen;
+        color: #eeffee;
+      }
+      nav a:visited {
+        color: aqua;
       }
     </style>
   </head>
@@ -73,13 +91,12 @@
           >
         </ul>
       </nav>
-      <h1>IDs and Classes</h1>
     </header>
     <main>
-      <p id="styled-by-id">
-        This page shows the effects of giving an element an ID and styling that
-        ID
-      </p>
+      <h1>Backgrounds and text</h1>
+      <div>
+        <p>School appropiate filler text</p>
+      </div>
     </main>
   </body>
 </html>
