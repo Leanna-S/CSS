@@ -1,5 +1,5 @@
 body {
-  background-color: #fbfbfe;
+  background-color: white;
   color: #17230b;
 }
 h1 {
@@ -8,10 +8,4 @@ h1 {
 }
 p {
   font-size: 24px;
-}
-* {
-  color: #000067;
-  font-size: 20px;
-  background-color: #f6f6fd;
-  margin: 5% 10% 10%;
 }
