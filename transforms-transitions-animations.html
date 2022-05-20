@@ -4,25 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Div and Span</title>
+    <title>Transforms, Transitions, and Animations</title>
     <style>
       body {
-        background-color: #fbfbfe;
-        color: #17230b;
+        background: linear-gradient(90deg, coral, lightcoral, pink);
+      }
+      main {
+        margin: 0 5% 5% 10%;
       }
       h1 {
+        font-size: 48px;
         text-align: center;
-        font-size: 40px;
+        background: linear-gradient(white, lightgray);
+        text-align: center;
+        padding: 20px;
+        transform: rotateX(180deg) rotateY(180deg);
       }
+
+      section {
+        background: linear-gradient(white, lightgray);
+        padding: 20px;
+        height: 1000px;
+      }
+      div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
       p {
         font-size: 24px;
       }
-      #styled-by-id {
-        font-family: Georgia, Cambria, serif;
-        font-weight: bold;
+      nav {
+        top: 0;
+        margin: 0;
       }
       ul {
-        list-style: none;
+        list-style-type: none;
+        top: 0;
+        margin: 0;
       }
       li {
         padding: 5px;
@@ -36,12 +56,18 @@
         border-style: solid;
         border-width: 2px;
         border-color: black;
-        background-color: #eeffee;
-        color: darkgreen;
-      }
-
-      .nav-links li {
         display: inline-block;
+        transition: transform 0.5s ease-in-out;
+
+        color: black;
+      }
+      .nav-links:hover,
+      .nav-links:focus {
+        background-color: #eeffee;
+        transform: scale(1.5, 1.5);
+      }
+      .nav-links:visited {
+        color: maroon;
       }
     </style>
   </head>
@@ -77,16 +103,21 @@
           >
         </ul>
       </nav>
-      <h1>Div and Span</h1>
     </header>
     <main>
-      <div style="color: ghostwhite; height: 140px; width: auto">
-        <p id="styled-by-id">
-          This page shows the effects of giving an element an ID and
-          <span style="color: #17230b; font-weight: bold">styling</span>
-          that ID
-        </p>
-      </div>
+      <h1>Transforms, Transitions, and Animations</h1>
+      <section>
+        <div>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+          <p>School appropriate filler text</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
