@@ -13,20 +13,16 @@
         margin: 0 5% 5% 10%;
       }
       body {
-        animation-name: fade-in;
-        animation-duration: 1s;
-        animation-timing-function: ease-in;
-        animation-delay: 0.5s;
-        animation-fill-mode: forwards;
+        animation: fade-in 1s ease-in 0.5s 1 normal forwards;
         position: relative;
       }
       @keyframes fade-in {
         from {
-          top: 200px;
+          transform: translateY(300px);
           opacity: 0;
         }
         to {
-          top: 0;
+          transform: translateY(0);
           opacity: 1;
         }
       }
@@ -119,6 +115,7 @@
           <a class="nav-links" href="transforms-transitions-animations.html"
             ><li>Transforms, Transitions, and Animations</li></a
           >
+          <a class="nav-links" href="positioning.html"><li>Positioning</li></a>
         </ul>
       </nav>
     </header>
